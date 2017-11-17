@@ -1,0 +1,27 @@
+page-home {
+
+    .back{
+        background-image:url("../assets/imgs/background.jpg");
+        background-size: contain;
+    }
+    .content-input{
+        background: transparent;
+    }
+    .item-md
+    {
+        background-color:transparent !important; 
+    }
+    
+    .toolbar-title-md{
+    color: #fff !important;
+    }
+   .button
+    {
+        color:#333 !important;
+        background: #fff !important;
+        margin-right: 40px;
+    }
+    .card-md{
+        background: transparent;
+    }
+}

@@ -1,0 +1,58 @@
+<ion-header>
+    <ion-navbar>
+        <!--<ion-tabs>
+            
+             <ion-tab tabTitle="contacts"   tabIcon="contacts"  (click)="login()"></ion-tab>
+            <ion-tab  tabTitle="messages" tabIcon="chatbubbles" (click)="register()"></ion-tab>
+            
+            
+          </ion-tabs> -->
+        <a href="#" (click)="login()">Login</a>
+        <a href="#" (click)="register()">Register</a> 
+    </ion-navbar>
+</ion-header>
+
+
+
+<ion-content class="back">
+    <ion-card class="card">
+        <form *ngIf="registerPage">
+            <ion-item class="content-input">
+                <ion-input type="text" placeholder="user name"></ion-input>
+            </ion-item>
+            <ion-item>
+                    <ion-input type="text" placeholder="phone number"></ion-input>
+                </ion-item>
+                <ion-item>
+                        <ion-input type="email" placeholder="Email"></ion-input>
+                    </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="password"></ion-input>
+            </ion-item>
+          <br>
+          <br>
+          <br>
+          <br>
+            <button ion-button class="button" >Submit</button>
+        </form>
+
+    </ion-card>
+
+    <ion-card class="cardd">
+        <form *ngIf="loginPage">
+
+            <ion-item>
+                <ion-input type="text" placeholder="user name"></ion-input>
+            </ion-item>
+            <ion-item>
+                <ion-input type="text" placeholder="password"></ion-input>
+            </ion-item>
+            <br>
+            <br>
+            <br>
+            <br>  
+            <button ion-button  class="button" (click)="login1()">Submit</button>
+
+        </form>
+    </ion-card>
+</ion-content>

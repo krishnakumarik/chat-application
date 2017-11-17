@@ -1,0 +1,33 @@
+page-profile {
+.button{
+    padding:20px 30px 20px 30px;
+    margin: 62px 40px 30px 90px;
+    align-content: center;
+}
+.img{
+    height: 100px;
+    width: 150px;
+    margin-right: 50px;
+    margin-left: 80px;
+    margin-top: 20px;
+}
+.back{
+    background-image:url("../assets/imgs/background.jpg");
+    background-size: contain;
+}
+.content-input{
+    background: transparent;
+}
+.item-md
+{
+    background-color:transparent !important; 
+}
+}
+.toolbar-title-md{
+color: #fff !important;
+}
+page-profile .button
+{
+    color:#333 !important;
+    background: #fff !important;
+}
