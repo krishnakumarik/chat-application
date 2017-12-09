@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { Data } from '../../model/data';
 
 /**
  * Generated class for the ProfilePage page.
@@ -17,9 +18,13 @@ export class ProfilePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
+  data:Data={ 
+    fullName: '',
+    phoneNumber: '',
+    Email: '',
+    password: ''
+    };
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ProfilePage');
-  }
+  
 
 }

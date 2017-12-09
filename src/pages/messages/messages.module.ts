@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { IonicPageModule } from 'ionic-angular';
+import { IonicPageModule, IonicModule } from 'ionic-angular';
 import { MessagesPage } from './messages';
 
 @NgModule({
@@ -8,6 +8,10 @@ import { MessagesPage } from './messages';
   ],
   imports: [
     IonicPageModule.forChild(MessagesPage),
+    IonicModule
   ],
+  exports:[
+    
+  ]
 })
 export class MessagesPageModule {}

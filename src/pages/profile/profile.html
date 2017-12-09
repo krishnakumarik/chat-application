@@ -3,18 +3,28 @@
 </ion-header>
 
 <ion-content class="back">
-  <ion-item class="img">
+  <div class="img">
     <img width="100px" height="100px" src="../assets/imgs/logo.png">
-</ion-item>
+  </div>
 
-<ion-item  class="content">
-  <ion-input type="text" placeholder="Name"></ion-input>
-</ion-item>
-<ion-item>
-  <ion-input type="text" placeholder="phone number"></ion-input>
-</ion-item>
-<ion-item>
-    <ion-input type="email" placeholder="Email"></ion-input>
+  <ion-item>
+    <ion-label>FullName:</ion-label>
+    <ion-input type="text" [(ngModel)]="data.fullName" name="fullName"></ion-input>
   </ion-item>
-<button ion-button class="button">Update</button>
+
+  <ion-item>
+    <ion-label>phoneNumber:</ion-label>
+    <ion-input type="text" [(ngModel)]="data.phoneNumber" name="phoneNumber"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Email:</ion-label>
+    <ion-input type="email" [(ngModel)]="data.Email" name="Email"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>PassWord:</ion-label>
+    <ion-input type="text" [(ngModel)]="data.password" name="password"></ion-input>
+  </ion-item>
+  <button ion-button class="button">Update</button>
 </ion-content>
